@@ -1,28 +1,41 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Premier essai</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>Premier essai</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
 				<section>
-					<section>
-						<h1>Présentation Temboard</h1>
-						<p>Bienvenue !</p>
-					</section>	
-					<section>
-						<pre><code data-trim data-noescape>
+					<h1>Présentation test</h1>
+					<p>Bienvenue !</p>
+				</section>
+				<section data-background-image="hacker-2883630_1280.jpg" data-background-opacity="0.2">
+					<h2 data-id="code-title">WHO AM I</h2>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">Sébastien
+						Jezequel</li>
+						<li class="fragment fade-in-then-semi-out">DBA PostgreSQL
+						</li>
+						<li class="fragment fade-in-then-semi-out">....</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="code-title">Exemple</h2>
+					<pre data-id="code-animation"><code class="hljs bash" data-trim data-line-numbers="|1|2-11|25,27,29-37|12-19|39-42"><script type="text/template">
 	#!/bin/bash
 	# --------------------------------------------------------------------------
 	# DATE :    04/01/2020
@@ -65,30 +78,37 @@
 	find "${REPERTOIRE}" -maxdepth 1 -type f -mtime "${NB_JOURS}" -delete
 	RETCOD=$(( RETCOD + $? ))
 	check_return_code_local
-						</code></pre>
-						<aside class="notes">
-                            Shhh, these are your private notes 📝
-                        </aside>
-					</section>
+							</script></code></pre>
+					<aside class="notes">
+						Shhh, these are your private notes 📝
+					</aside>
 				</section>
-				<section>Slide 2</section>
-			</div>
+			</section>
+			<section>Slide 2</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+            progress: true,
+            history: true,
+			navigationMode: 'default',
+            center: true,
+            transition: 'fade',
+            slideNumber: 'c',
+			fragments: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
 </html>
