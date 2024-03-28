@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Présentation temBoard</title>
+    <meta name="description" content="Une présentation de temBoard pour l'équipe Ops">
+    <meta name="author" content="Votre Nom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <img src="temboard/images/temboard-banner.svg" alt="Logo temBoard" style="height: 180px; margin: 0 auto; background: transparent;">
+                <h3>Bienvenue dans temBoard et non TeamBoard</h3>
+                <p>
+                    <small>La solution ultime de gestion et de monitoring pour PostgreSQL créér par DALIBO.</small>
+                </p>
+            </section>
+
+            <section>
+                <h2>Fonctionnalités Clés</h2>
+				<ul>
+					<li class="fragment">Surveillance en temps réel : Gardez un œil sur la performance de votre base de données.</li>
+					<li class="fragment">Gestion des alertes : Soyez notifié immédiatement en cas de problèmes.</li>
+					<li class="fragment">Administration à distance : Gérez vos bases de données PostgreSQL de n'importe où.</li>
+					<li class="fragment">Tableaux de bord personnalisables : Visualisez les métriques importantes à votre façon.</li>
+					<li class="fragment">Gestion des performances : Identifiez et résolvez les goulets d'étranglement rapidement.</li>
+				</ul>
+            </section>
+
+            <section>
+                <h2>Avantages pour les Ops</h2>
+                <p>Insights précieux sur la performance et la santé des serveurs de bases de données.</p>
+            </section>
+
+            <section data-background-image="temboard/images/temboard_docker.webp" data-background-opacity="0.2">
+                <h2>À Prendre en Compte</h2>
+                <p>temBoard n'est pas adapté pour les instances PostgreSQL dockerisées.</p>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>Questions ? Suggestions ?</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+</body>
+</html>
